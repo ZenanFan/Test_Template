@@ -11,6 +11,12 @@ import { OCRProcessor } from '@theamiteshtripathi/ocr-utils'; // New dependency
  * and generates unique hashes for the processed content.
  */
 export class DocumentProcessor {
+  private ocrProcessor: OCRProcessor;
+  
+  constructor() {
+    this.ocrProcessor = new OCRProcessor();
+  }
+
   /**
    * Processes an array of PDF files and returns their content with hash values
    * @param files - Array of PDF file buffers to process
