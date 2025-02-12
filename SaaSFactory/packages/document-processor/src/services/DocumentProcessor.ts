@@ -2,6 +2,8 @@ import { promises as fs } from 'fs';
 import * as path from 'path';
 const pdf = require('pdf-parse');
 import { ProcessedFile } from '../types';
+// Modified DocumentProcessor.ts
+import { OCRProcessor } from '@theamiteshtripathi/ocr-utils'; // New dependency
 
 export class DocumentProcessor {
   async processFiles(files: Buffer[]): Promise<ProcessedFile[]> {
