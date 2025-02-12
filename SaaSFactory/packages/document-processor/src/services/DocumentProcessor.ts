@@ -3,6 +3,8 @@ import { promises as fs } from 'fs';
 import * as path from 'path';
 const pdf = require('pdf-parse');
 import { ProcessedFile } from '../types';
+// Modified DocumentProcessor.ts
+import { OCRProcessor } from '@theamiteshtripathi/ocr-utils'; // New dependency
 
 /**
  * DocumentProcessor handles the processing of PDF files into text content
